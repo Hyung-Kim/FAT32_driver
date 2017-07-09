@@ -1,0 +1,123 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -g -O0 -D_FILE_OFFSET_BITS=64$/;"	m
+CONSUME_PREFIX	debugfs.c	12;"	d	file:
+DEBUGFS_MAX_FILE_LEN	debugfs.c	8;"	d	file:
+DEBUGFS_PATH	vfat.c	/^char* DEBUGFS_PATH = "\/.debug";$/;"	v
+DEBUG_PRINT	vfat.c	23;"	d	file:
+FUSE_USE_VERSION	vfat.c	2;"	d	file:
+H_TEST_HELPERS	debugfs.h	2;"	d
+H_UTIL	util.h	2;"	d
+LDFLAGS	Makefile	/^LDFLAGS=-lfuse$/;"	m
+NEXT_CLUSTER_PATH	debugfs.c	10;"	d	file:
+VFAT_ATTR_DIR	vfat.h	67;"	d
+VFAT_ATTR_INVAL	vfat.h	69;"	d
+VFAT_ATTR_LFN	vfat.h	68;"	d
+VFAT_H	vfat.h	3;"	d
+VFAT_LFN_SEQ_DELETED	vfat.h	83;"	d
+VFAT_LFN_SEQ_MASK	vfat.h	84;"	d
+VFAT_LFN_SEQ_START	vfat.h	82;"	d
+_GNU_SOURCE	vfat.c	3;"	d	file:
+atime_date	vfat.h	/^    \/*18*\/  uint16_t atime_date;$/;"	m	struct:fat32_direntry
+attr	vfat.h	/^    \/*11*\/  uint8_t  attr;$/;"	m	struct:fat32_direntry
+attr	vfat.h	/^    \/*11*\/  uint8_t  attr;$/;"	m	struct:fat32_direntry_long
+backup_sector	vfat.h	/^    \/*50*\/  uint16_t backup_sector;$/;"	m	struct:fat_boot_header
+bytes_per_sector	vfat.h	/^    \/*11*\/  uint16_t bytes_per_sector;$/;"	m	struct:fat_boot_header
+bytes_per_sector	vfat.h	/^    size_t      bytes_per_sector;$/;"	m	struct:vfat_data
+cluster_begin_offset	vfat.h	/^    off_t       cluster_begin_offset;$/;"	m	struct:vfat_data
+cluster_hi	vfat.h	/^    \/*20*\/  uint16_t cluster_hi;$/;"	m	struct:fat32_direntry
+cluster_lo	vfat.h	/^    \/*26*\/  uint16_t cluster_lo;$/;"	m	struct:fat32_direntry
+cluster_size	vfat.h	/^    size_t      cluster_size;$/;"	m	struct:vfat_data
+csum	vfat.h	/^    \/*13*\/  uint8_t  csum;$/;"	m	struct:fat32_direntry_long
+ctime_date	vfat.h	/^    \/*16*\/  uint16_t ctime_date;$/;"	m	struct:fat32_direntry
+ctime_ms	vfat.h	/^    \/*13*\/  uint8_t  ctime_ms;$/;"	m	struct:fat32_direntry
+ctime_time	vfat.h	/^    \/*14*\/  uint16_t ctime_time;$/;"	m	struct:fat32_direntry
+debugfs_fuse_getattr	debugfs.c	/^int debugfs_fuse_getattr(const char *path, struct stat *st) {$/;"	f
+debugfs_fuse_read	debugfs.c	/^int debugfs_fuse_read(const char *path, char *buf, size_t size, off_t offs,$/;"	f
+debugfs_fuse_readdir	debugfs.c	/^int debugfs_fuse_readdir($/;"	f
+dev	vfat.h	/^    const char* dev;$/;"	m	struct:vfat_data
+direntry_per_cluster	vfat.h	/^    size_t      direntry_per_cluster;$/;"	m	struct:vfat_data
+drive_number	vfat.h	/^    \/*64*\/  uint8_t  drive_number;$/;"	m	struct:fat_boot_header
+executable_code	vfat.h	/^    \/*90*\/  char     executable_code[420];$/;"	m	struct:fat_boot_header
+ext	vfat.h	/^                    char ext[3];$/;"	m	struct:fat32_direntry::__anon1::__anon2
+ext_sig	vfat.h	/^    \/*66*\/  uint8_t  ext_sig;$/;"	m	struct:fat_boot_header
+fat	vfat.h	/^    uint32_t*   fat; \/\/ use util::mmap_file() to map this directly into the memory $/;"	m	struct:vfat_data
+fat32_direntry	vfat.h	/^struct fat32_direntry {$/;"	s
+fat32_direntry_long	vfat.h	/^struct fat32_direntry_long {$/;"	s
+fat_begin_offset	vfat.h	/^    off_t       fat_begin_offset;$/;"	m	struct:vfat_data
+fat_boot_header	vfat.h	/^struct fat_boot_header {$/;"	s
+fat_count	vfat.h	/^    \/*16*\/  uint8_t  fat_count;$/;"	m	struct:fat_boot_header
+fat_entries	vfat.h	/^    size_t      fat_entries;$/;"	m	struct:vfat_data
+fat_flags	vfat.h	/^    \/*40*\/  uint16_t fat_flags;$/;"	m	struct:fat_boot_header
+fat_name	vfat.h	/^    \/*82*\/  char     fat_name[8];$/;"	m	struct:fat_boot_header
+fat_size	vfat.h	/^    size_t      fat_size;$/;"	m	struct:vfat_data
+fd	vfat.h	/^    int         fd;$/;"	m	struct:vfat_data
+found	vfat.c	/^    int          found;$/;"	m	struct:vfat_search_data	file:
+fs_offset	vfat.h	/^    \/*28*\/  uint32_t fs_offset;$/;"	m	struct:fat_boot_header
+fsinfo_sector	vfat.h	/^    \/*48*\/  uint16_t fsinfo_sector;$/;"	m	struct:fat_boot_header
+head_count	vfat.h	/^    \/*26*\/  uint16_t head_count;$/;"	m	struct:fat_boot_header
+iconv_utf16	vfat.c	/^iconv_t iconv_utf16;$/;"	v
+jmp_boot	vfat.h	/^    \/* 0*\/  uint8_t  jmp_boot[3];$/;"	m	struct:fat_boot_header
+label	vfat.h	/^    \/*71*\/  char     label[11];$/;"	m	struct:fat_boot_header
+main	vfat.c	/^int main(int argc, char **argv)$/;"	f
+media_info	vfat.h	/^    \/*21*\/  uint8_t  media_info;$/;"	m	struct:fat_boot_header
+mmap_file	util.c	/^void* mmap_file(int fd, off_t offset, size_t size)$/;"	f
+mount_gid	vfat.h	/^    gid_t mount_gid;$/;"	m	struct:vfat_data
+mount_time	vfat.h	/^    time_t mount_time;$/;"	m	struct:vfat_data
+mount_uid	vfat.h	/^    uid_t mount_uid;$/;"	m	struct:vfat_data
+mtime_date	vfat.h	/^    \/*24*\/  uint16_t mtime_date;$/;"	m	struct:fat32_direntry
+mtime_time	vfat.h	/^    \/*22*\/  uint16_t mtime_time;$/;"	m	struct:fat32_direntry
+name	vfat.c	/^    const char*  name;$/;"	m	struct:vfat_search_data	file:
+name	vfat.h	/^                    char name[8];$/;"	m	struct:fat32_direntry::__anon1::__anon2
+name1	vfat.h	/^    \/* 1*\/  uint16_t name1[5];$/;"	m	struct:fat32_direntry_long
+name2	vfat.h	/^    \/*14*\/  uint16_t name2[6];$/;"	m	struct:fat32_direntry_long
+name3	vfat.h	/^    \/*28*\/  uint16_t name3[2];$/;"	m	struct:fat32_direntry_long
+nameext	vfat.h	/^                char nameext[11];$/;"	m	union:fat32_direntry::__anon1
+oemname	vfat.h	/^    \/* 3*\/  char     oemname[8];$/;"	m	struct:fat_boot_header
+page_ceil	util.c	/^uintptr_t page_ceil(uintptr_t offset) {$/;"	f
+page_floor	util.c	/^uintptr_t page_floor(uintptr_t offset) {$/;"	f
+res	vfat.h	/^    \/*12*\/  uint8_t  res;$/;"	m	struct:fat32_direntry
+reserved2	vfat.h	/^    \/*26*\/  uint16_t reserved2;$/;"	m	struct:fat32_direntry_long
+reserved2	vfat.h	/^    \/*52*\/  uint8_t  reserved2[12];$/;"	m	struct:fat_boot_header
+reserved3	vfat.h	/^    \/*65*\/  uint8_t  reserved3;$/;"	m	struct:fat_boot_header
+reserved_sectors	vfat.h	/^    \/*14*\/  uint16_t reserved_sectors;$/;"	m	struct:fat_boot_header
+reserved_sectors	vfat.h	/^    size_t      reserved_sectors;$/;"	m	struct:vfat_data
+root_cluster	vfat.h	/^    \/*44*\/  uint32_t root_cluster;$/;"	m	struct:fat_boot_header
+root_inode	vfat.h	/^    struct stat root_inode;$/;"	m	struct:vfat_data	typeref:struct:vfat_data::stat
+root_max_entries	vfat.h	/^    \/*17*\/  uint16_t root_max_entries;$/;"	m	struct:fat_boot_header
+root_max_entries	vfat.h	/^    size_t 	root_max_entries;$/;"	m	struct:vfat_data
+sectors_per_cluster	vfat.h	/^    \/*13*\/  uint8_t  sectors_per_cluster;$/;"	m	struct:fat_boot_header
+sectors_per_cluster	vfat.h	/^    size_t      sectors_per_cluster;$/;"	m	struct:vfat_data
+sectors_per_fat	vfat.h	/^    \/*36*\/  uint32_t sectors_per_fat;$/;"	m	struct:fat_boot_header
+sectors_per_fat	vfat.h	/^    size_t      sectors_per_fat;$/;"	m	struct:vfat_data
+sectors_per_fat_small	vfat.h	/^    \/*22*\/  uint16_t sectors_per_fat_small;$/;"	m	struct:fat_boot_header
+sectors_per_track	vfat.h	/^    \/*24*\/  uint16_t sectors_per_track;$/;"	m	struct:fat_boot_header
+seq	vfat.h	/^    \/* 0*\/  uint8_t  seq;$/;"	m	struct:fat32_direntry_long
+serial	vfat.h	/^    \/*67*\/  uint32_t serial;$/;"	m	struct:fat_boot_header
+signature	vfat.h	/^    \/*510*\/ uint16_t signature;$/;"	m	struct:fat_boot_header
+size	vfat.h	/^    \/*28*\/  uint32_t size;$/;"	m	struct:fat32_direntry
+st	vfat.c	/^    struct stat* st;$/;"	m	struct:vfat_search_data	typeref:struct:vfat_search_data::stat	file:
+total_sectors	vfat.h	/^    \/*32*\/  uint32_t total_sectors;$/;"	m	struct:fat_boot_header
+total_sectors_small	vfat.h	/^    \/*19*\/  uint16_t total_sectors_small;$/;"	m	struct:fat_boot_header
+type	vfat.h	/^    \/*12*\/  uint8_t  type;$/;"	m	struct:fat32_direntry_long
+unmap	util.c	/^void unmap(void* buf, size_t size)$/;"	f
+version	vfat.h	/^    \/*42*\/  uint16_t version;$/;"	m	struct:fat_boot_header
+vfat_available_ops	vfat.c	/^struct fuse_operations vfat_available_ops = {$/;"	v	typeref:struct:fuse_operations
+vfat_data	vfat.h	/^struct vfat_data {$/;"	s
+vfat_fuse_getattr	vfat.c	/^int vfat_fuse_getattr(const char *path, struct stat *st)$/;"	f
+vfat_fuse_getxattr	vfat.c	/^int vfat_fuse_getxattr(const char *path, const char* name, char* buf, size_t size)$/;"	f
+vfat_fuse_read	vfat.c	/^int vfat_fuse_read($/;"	f
+vfat_fuse_readdir	vfat.c	/^int vfat_fuse_readdir($/;"	f
+vfat_info	vfat.h	/^struct vfat_data vfat_info;$/;"	v	typeref:struct:vfat_data
+vfat_init	vfat.c	/^vfat_init(const char *dev)$/;"	f	file:
+vfat_next_cluster	vfat.c	/^int vfat_next_cluster(uint32_t c)$/;"	f
+vfat_opt_args	vfat.c	/^vfat_opt_args(void *data, const char *arg, int key, struct fuse_args *oargs)$/;"	f
+vfat_readdir	vfat.c	/^int vfat_readdir(uint32_t first_cluster, fuse_fill_dir_t callback, void *callbackdata)$/;"	f
+vfat_resolve	vfat.c	/^int vfat_resolve(const char *path, struct stat *st)$/;"	f
+vfat_search_data	vfat.c	/^struct vfat_search_data {$/;"	s	file:
+vfat_search_entry	vfat.c	/^int vfat_search_entry(void *data, const char *name, const struct stat *st, off_t offs)$/;"	f
